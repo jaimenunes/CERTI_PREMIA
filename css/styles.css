@@ -15,7 +15,7 @@ body{
     background-color: var(--grey_stars);
 }
 .background-home{
-    background-image: url('/imagem/starship.jpg');
+    background-image: url('../imagem/starship.jpg');
     background-size: cover;
 }
 /* NAVBAR ====================================================== */
