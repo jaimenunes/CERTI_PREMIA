@@ -1,0 +1,173 @@
+/* GLOBAL ======================================================= */
+:root{
+    --blue_stars: #1F2738;
+    --orange_stars: #F56F36;
+    --black_stars: #000; 
+    --grey_stars: #EEEEEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    background-color: var(--grey_stars);
+}
+.background-home{
+    background-image: url('/imagem/starship.jpg');
+    background-size: cover;
+}
+/* NAVBAR ====================================================== */
+.nav-list{
+    background-color: var(--blue_stars);
+    height: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 3rem;
+    align-content: stretch;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid snow;
+}
+
+.nav-item a{
+    padding-left: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--grey_stars);
+}
+.nav-item a.active{
+    color: var(--orange_stars);
+}
+
+.nav-item a:hover{
+    color: var(--orange_stars);
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+    border-left: none;
+}
+.nav-item:first-child a{
+    font-size: 2rem;
+}
+
+/* HOME ========================================================= */
+.main-btns{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);;
+}
+
+.btn{
+    padding: 8px;
+    width: 12rem;
+    margin: 2rem;
+    background-color: var(--grey_stars);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+a .btn{
+    text-decoration: none;
+    color: var(--black_stars);
+    font-size: 1.3rem;
+}
+
+a .btn:hover{
+    background-color: var(--orange_stars);
+    color: var(--grey_stars);
+}
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black_stars);
+}
+/* Items =================================================== */
+.container-master{
+    margin: 0;
+    margin-top: 0.5rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);; /* alinhamento centralizado verticalmente e horizontalmente*/
+}
+.container-items{
+    display: flex;
+    flex-direction: column;
+}
+.line-items{
+    display: flex;
+    margin: 25px;
+}
+.items{
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+.items p{
+    cursor: pointer;
+    background-color:var(--blue_stars);
+    color: var(--grey_stars);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    height: 20%;
+}
+
+.items p:hover, .items:hover p{
+    background-color: var(--orange_stars);
+}
+
+@media (max-width: 650px){
+    .nav-item{     
+        margin-right: 1rem;
+    }
+    .nav-item a{
+        padding-left: 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--grey_stars);
+    }
+    .nav-item:first-child a{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .nav-item:first-child {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .line-items{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .items{
+        margin-top: 15px;
+    }
+    .container-master{
+        max-height: 80vh;
+    }
+}

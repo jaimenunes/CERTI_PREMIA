@@ -1,0 +1,11 @@
+{
+  "name": "stars-wars-certi",
+  "version": "1.0.0",
+  "description": "Project to CERTI ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaime Nunes Leal",
+  "license": "ISC"
+}
